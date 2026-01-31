@@ -10,18 +10,18 @@ int main()
 	srand(time(0));
 
 	do {
+		cin.clear();
+        cin.ignore(1000, '\n');
+		
     	cout << "How many rounds do you want to play? ";
     	cin >> rounds;
 
     	if(cin.fail()) {
         	cout << "Invalid input! Letters are not allowed.\n";
-        	cin.clear();
-        	cin.ignore(1000, '\n');
     	}
     	else if(rounds <= 0) {
         	cout << "Number of rounds must be at least 1!\n";
     	}
-
 	} while(cin.fail() || rounds <= 0);
 
 	for (int i = 0; i < rounds; i++) //Game Loop
