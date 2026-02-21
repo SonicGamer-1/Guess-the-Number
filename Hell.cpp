@@ -9,6 +9,8 @@ int main()
 	int rounds;
 	srand(time(0));
 
+	cout << "Press Enter to Continue\n";
+	
 	do {
 		cin.clear();
         cin.ignore(1000, '\n');
@@ -59,4 +61,5 @@ int main()
 	}
 
 	cout << "\nYour Score is " << score; //Score System
+	cout << "\nYou Guessed " << (float)score*100/rounds << "% Right";
 }
